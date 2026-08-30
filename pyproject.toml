@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axonlib"
+version = "0.1.0"
+description = "A lightweight NumPy-based neural network library"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.26.0",
+]
+
+[tool.setuptools]
+packages = ["neura", "neura.layers", "neura.losses", "neura.optimizers", "neura.utils", "tests"]
